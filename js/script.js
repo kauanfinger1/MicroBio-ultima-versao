@@ -176,7 +176,7 @@ fetch(urlServicos)
 
     icones.forEach((item, index) => {
       const link = document.createElement("a");
-      link.href = "servicos.html";
+      link.href = "src/servicos.html";
       link.classList.add("icone-link");
 
       // Cria o bloco principal
