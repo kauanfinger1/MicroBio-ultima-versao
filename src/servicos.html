@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/servicos.css">
+    <link rel="website icon" href="../../assets/icons/logo-teste.png" />
+    <title>Página Serviços Microbio</title>
+</head>
+<body>
+    <a href="https://wa.me/554599865119?text=Oi!%20Tudo%20bem%3F%20Vi%20o%20servi%C3%A7o%20de%20voc%C3%AAs%20no%20site%20e%20fiquei%20interessado(a).%20Queria%20saber%20mais%20detalhes"
+    target="_blank" id="whatsapp">
+    <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#006A00"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+    </a>
+<!-- Cabeçalho Página Inicial Cliente -->
+    <header class="cabecalho-inicio">
+        <nav id="navbar" class="menu">
+            <div class="logo-menu">
+                 <a href="../index.html"><img src="../assets/icons/logo_4.png" alt="Logo do Laboratório Microbio"></a>
+            </div>
+            <div class="elementos-menu">
+                <a href="../index.html" class="link-menu">Início</a>
+                <a href="../index.html#sobre">Sobre Nós</a>
+                <a href="#">Serviços</a>
+                <a href="novidades.html" class="link-menu">Novidades</a>
+
+                 <!-- Seções Unidades -->
+                <div class="secoes">
+                    <a class="intercalar-secoes" href="#">Unidades</a>
+                    <div class="secoes-menu">
+                        <a href="../index.html">Agronegócio</a>
+                        <a href="https://microbio.uniexames.com.br/cms/inicio">Laboratório</a>
+                    </div>
+                </div>
+                <a href="https://micro.bio.vnt.app.br/app/views/login.php" class="icone-login">
+                    <div class="icone-usuario">
+                        <img src="../assets/icons/user_icon.png" alt="ícone de Usuário">
+                    </div>
+                </a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="voltar-servicos">
+    <h3><a href="../index.html">← SERVIÇOS</a></h3>
+    </div>
+    <div class="cards-servicos"></div>
+            <div class="linhas">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <section class="contato-section">
+        <div class="contato-header">
+            <h2>• • ENTRE EM CONTATO • •</h2>
+        </div>
+        <div class="contato-container">
+            <div class="formulario-box">
+                <h3>FORMULÁRIO<br>DE CONTATO</h3>
+                <form id="formContato" class="form-contato">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Serviço Desejado</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sobre o serviço que deseja contratar" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="logo-footer">
+                <a href="#navbar"><img src="../assets/icons/logo_7.png" alt="Logo Micro Bio" class="logo-img"></a>
+            </div>
+            <h3 class="footer-heading">Redes Sociais</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/microbiolaboratorio/#" target="_blank" aria-label="Instagram">
+                    <img src="../assets/icons/Instagram.png">
+                </a>
+                <a href="https://www.linkedin.com/company/microbiolaboratorio/" target="_blank" aria-label="LinkedIn">
+                    <img src="../assets/icons/Linkedin.png">
+                </a>
+                <a href="https://www.facebook.com/microbiolaboratorio" target="_blank" aria-label="Facebook">
+                    <img src="../assets/icons/Facebook.png">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column footer-links-group">
+            <div class="contatos">
+                <h3 class="footer-heading">Contatos</h3>
+                <p>
+                       <img src="../assets/icons/mark_email_unread (1).png">
+                    <a href="mailto:microbiolaboratorio@gmail.com">microbiolaboratorio@gmail.com</a>
+                </p>
+                <p>
+                    <img src="../assets/icons/Phone.png">
+                    <a href="tel:+554599865119">+55 (45) 9 9986-5119</a>
+                </p>
+            </div>
+            <div class="privacidade">
+                <h3 class="footer-heading">Privacidade</h3>
+                <a href="politica.html">Política e privacidade</a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Localização</h3>
+            <div class="location-info">
+                <img src="../assets/icons/location_on.png">
+                <a href="https://www.google.com/maps/place/Biopark/@-24.617566,-53.712088,2829m/data=!3m1!1e3!4m6!3m5!1s0x94f3bd769c061531:0x63d0e45c48b81246!8m2!3d-24.6175656!4d-53.7120884!16s%2Fg%2F11h4q7m551?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MTEwMi4wIKXMDSoASAFQAw%3D%3D"><p>Rua das Cássias Imperiais, 290 - Biopark Toledo/PR</p></a>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2833.9485494711353!2d-53.715087214519194!3d-24.62129941161667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3bd19485594f9%3A0x4479a9f5cdc3fa78!2sBiopark%20(Condom%C3%ADnio%20Industrial)!5e0!3m2!1spt-BR!2sbr!4v1758150687553!5m2!1spt-BR!2sbr" class="map-iframe" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+.cards-servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: #033539;
+    padding-bottom: 5rem;
+}
+
+.card-servicos{
+    background-color: #0F484C;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 300px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+
+.card-servicos h4{
+    font-size: 25px;
+    padding: 15px;
+}
+
+.voltar-servicos{
+    background-color: #033539;
+    padding: 30px;
+}
+
+.voltar-servicos a{
+     color: white;
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+}
+.voltar-servicos a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);   /* animação via transform evita reflow */
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.voltar-servicos a:hover::after{
+  transform: scaleX(1);
+}
+
+/* Seção de Contato */
+
+.contato-section {
+    background-image: url('../assets/img/enhanced_campo-agricultura.png');   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contato-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.contato-header {
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.contato-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #033539;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.contato-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.formulario-box {
+    background-color: #0A5157;
+    border-radius: 12px;
+    padding: 40px 50px;
+    max-width: 550px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-box h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-family: 'M PLUS 1', sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #333;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    border-radius: 15px;
+}
+
+.btn-enviar {
+    background-color: #0D6B73;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px auto 0;
+    display: block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.btn-enviar:hover {
+    background-color: #0A5157;
+    transform: translateY(-2px);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contato-header h2 {
+        font-size: 28px;
+    }
+    
+    .formulario-box {
+        padding: 30px 25px;
+        margin: 0 15px;
+    }
+    
+    .formulario-box h3 {
+        font-size: 24px;
+    }
+    
+    .contato-section {
+        min-height: 600px;
+    }
+}
